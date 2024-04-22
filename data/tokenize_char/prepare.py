@@ -9,6 +9,8 @@ import pickle
 import requests
 import numpy as np
 
+data = ""
+
 # download the tiny shakespeare dataset
 input_file_path = os.path.join(os.path.dirname(__file__), 'input.txt')
 if not os.path.exists(input_file_path):
@@ -17,8 +19,33 @@ if not os.path.exists(input_file_path):
         f.write(requests.get(data_url).text)
 
 with open(input_file_path, 'r') as f:
-    data = f.read()
-print(f"length of dataset in characters: {len(data):,}")
+    cur_data = f.read()
+print(f"length of dataset shakesperere in characters: {len(cur_data):,}")
+data += cur_data
+
+# gpt generated paragraphs
+input_file_path = "/home/yuxuan.wu/hotdog/data/gpt_responses_diverse.txt"
+with open(input_file_path, 'r') as f:
+    cur_data = f.read()
+print(f"length of dataset gpt in characters: {len(cur_data):,}")
+data += cur_data
+
+# random para
+input_file_path = "/home/yuxuan.wu/hotdog/data/randomwordgenerator_paragraphs_filtered.txt"
+with open(input_file_path, 'r') as f:
+    cur_data = f.read()
+print(f"length of dataset random para in characters: {len(cur_data):,}")
+data += cur_data
+
+# random para
+input_file_path = "/home/yuxuan.wu/hotdog/data/randomwordgenerator_sentences_filtered.txt"
+with open(input_file_path, 'r') as f:
+    cur_data = f.read()
+print(f"length of dataset random para in characters: {len(cur_data):,}")
+data += cur_data
+
+print(f"length of all data: {len(data):,}")
+
 
 # get all the unique characters that occur in this text
 chars = sorted(list(set(data)))

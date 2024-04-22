@@ -1,0 +1,425 @@
+2024-04-22 21:57:44,832 INFO    StreamThr :1154563 [internal.py:wandb_internal():86] W&B internal server running at pid: 1154563, started at: 2024-04-22 21:57:44.831473
+2024-04-22 21:57:44,832 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status
+2024-04-22 21:57:44,833 INFO    WriterThread:1154563 [datastore.py:open_for_write():85] open: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/run-s7mol9uq.wandb
+2024-04-22 21:57:44,835 DEBUG   SenderThread:1154563 [sender.py:send():380] send: header
+2024-04-22 21:57:44,842 DEBUG   SenderThread:1154563 [sender.py:send():380] send: run
+2024-04-22 21:57:46,369 INFO    SenderThread:1154563 [dir_watcher.py:__init__():211] watching files in: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files
+2024-04-22 21:57:46,369 INFO    SenderThread:1154563 [sender.py:_start_run_threads():1122] run started: s7mol9uq with start time 1713808664.832081
+2024-04-22 21:57:46,375 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: check_version
+2024-04-22 21:57:46,375 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: check_version
+2024-04-22 21:57:46,605 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: run_start
+2024-04-22 21:57:46,644 DEBUG   HandlerThread:1154563 [system_info.py:__init__():32] System info init
+2024-04-22 21:57:46,644 DEBUG   HandlerThread:1154563 [system_info.py:__init__():47] System info init done
+2024-04-22 21:57:46,644 INFO    HandlerThread:1154563 [system_monitor.py:start():194] Starting system monitor
+2024-04-22 21:57:46,645 INFO    SystemMonitor:1154563 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-22 21:57:46,645 INFO    HandlerThread:1154563 [system_monitor.py:probe():214] Collecting system info
+2024-04-22 21:57:46,645 INFO    SystemMonitor:1154563 [interfaces.py:start():190] Started cpu monitoring
+2024-04-22 21:57:46,645 INFO    SystemMonitor:1154563 [interfaces.py:start():190] Started disk monitoring
+2024-04-22 21:57:46,646 INFO    SystemMonitor:1154563 [interfaces.py:start():190] Started gpu monitoring
+2024-04-22 21:57:46,646 INFO    SystemMonitor:1154563 [interfaces.py:start():190] Started memory monitoring
+2024-04-22 21:57:46,647 INFO    SystemMonitor:1154563 [interfaces.py:start():190] Started network monitoring
+2024-04-22 21:57:46,685 DEBUG   HandlerThread:1154563 [system_info.py:probe():196] Probing system
+2024-04-22 21:57:46,688 DEBUG   HandlerThread:1154563 [system_info.py:_probe_git():181] Probing git
+2024-04-22 21:57:46,699 DEBUG   HandlerThread:1154563 [system_info.py:_probe_git():189] Probing git done
+2024-04-22 21:57:46,699 DEBUG   HandlerThread:1154563 [system_info.py:probe():244] Probing system done
+2024-04-22 21:57:46,699 DEBUG   HandlerThread:1154563 [system_monitor.py:probe():223] {'os': 'Linux-5.15.133-ql-generic-13.0-9-x86_64-with-glibc2.35', 'python': '3.11.4', 'heartbeatAt': '2024-04-22T17:57:46.685767', 'startedAt': '2024-04-22T17:57:44.822253', 'docker': None, 'cuda': None, 'args': ('config/train_char.py',), 'state': 'running', 'program': '/home/yuxuan.wu/hotdog/nanoGPT/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Irislucent/nanoGPT.git', 'commit': '325be85d9be8c81b436728a420e85796c57dba7e'}, 'email': 'wu_yuxuan201@outlook.com', 'root': '/home/yuxuan.wu/hotdog/nanoGPT', 'host': 'ws-l6-019', 'username': 'yuxuan.wu', 'executable': '/home/yuxuan.wu/miniconda3/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3891.06484375, 'min': 2200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3614.075, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}], 'disk': {'/': {'total': 1.0, 'used': 0.04215240478515625}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.65230941772461}}
+2024-04-22 21:57:46,699 INFO    HandlerThread:1154563 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-22 21:57:46,699 INFO    HandlerThread:1154563 [system_monitor.py:probe():227] Publishing system info
+2024-04-22 21:57:46,699 DEBUG   HandlerThread:1154563 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-04-22 21:57:46,700 DEBUG   HandlerThread:1154563 [system_info.py:_save_pip():68] Saving pip packages done
+2024-04-22 21:57:46,700 DEBUG   HandlerThread:1154563 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-04-22 21:57:47,371 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/conda-environment.yaml
+2024-04-22 21:57:47,371 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/requirements.txt
+2024-04-22 21:57:48,966 DEBUG   HandlerThread:1154563 [system_info.py:_save_conda():87] Saving conda packages done
+2024-04-22 21:57:48,968 INFO    HandlerThread:1154563 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-22 21:57:48,976 DEBUG   SenderThread:1154563 [sender.py:send():380] send: files
+2024-04-22 21:57:48,976 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-04-22 21:57:48,981 DEBUG   SenderThread:1154563 [sender.py:send():380] send: telemetry
+2024-04-22 21:57:49,040 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:57:49,041 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:57:49,041 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:57:49,371 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/conda-environment.yaml
+2024-04-22 21:57:49,371 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-metadata.json
+2024-04-22 21:57:50,072 INFO    wandb-upload_0:1154563 [upload_job.py:push():131] Uploaded file /tmp/slurm-yuxuan.wu-27718/tmpbio36n8hwandb/fzvd0744-wandb-metadata.json
+2024-04-22 21:57:50,337 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:57:55,200 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:57:55,201 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:57:55,201 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:57:55,203 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:57:55,375 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:57:55,375 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:57:56,204 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:57:57,376 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:01,368 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:03,380 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:03,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:58:03,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:58:03,981 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:58:05,382 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:07,122 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:07,383 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:07,752 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:07,752 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:07,752 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:07,753 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:08,417 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:09,419 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:11,421 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:12,222 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:13,423 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:15,424 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:15,508 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:15,509 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:15,509 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:15,510 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:16,460 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:17,384 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:17,461 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:18,462 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/config.yaml
+2024-04-22 21:58:18,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:58:18,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:58:18,981 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:58:19,463 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:21,464 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:22,649 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:23,280 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:23,281 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:23,281 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:23,283 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:23,501 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:25,503 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:27,505 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:27,761 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:29,506 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:31,082 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:31,083 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:31,083 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:31,084 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:31,542 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:32,789 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:33,544 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:33,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:58:33,981 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:58:33,982 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:58:35,546 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:37,548 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:38,224 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:38,874 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:38,875 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:38,875 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:38,876 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:39,585 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:41,585 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:43,363 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:43,587 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:45,589 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:46,647 DEBUG   SystemMonitor:1154563 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-22 21:58:46,648 DEBUG   SenderThread:1154563 [sender.py:send():380] send: stats
+2024-04-22 21:58:46,655 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:46,656 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:46,656 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:46,657 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:47,699 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:47,699 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:48,366 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:48,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:58:48,980 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:58:48,981 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:58:49,700 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:51,702 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:53,704 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:53,801 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:54,450 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:58:54,450 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:58:54,451 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:58:54,452 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:58:54,733 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:58:55,735 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:57,737 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:58:58,939 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:58:59,738 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:01,740 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:02,258 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:02,259 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:02,259 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:02,260 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:02,765 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:03,766 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:03,969 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:03,980 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:59:03,981 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:59:03,982 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:59:05,768 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:07,770 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:09,403 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:09,772 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:10,054 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:10,055 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:10,055 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:10,056 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:10,803 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:11,804 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:13,806 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:14,547 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:15,808 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:16,648 DEBUG   SenderThread:1154563 [sender.py:send():380] send: stats
+2024-04-22 21:59:17,810 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:17,855 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:17,855 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:17,855 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:17,857 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:18,861 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:19,057 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:59:19,057 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:59:19,058 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:59:19,565 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:19,863 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:21,865 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:23,867 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:25,000 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:25,633 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:25,633 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:25,633 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:25,635 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:26,043 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:26,043 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:28,044 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:30,046 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:30,123 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:32,048 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:33,431 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:33,431 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:33,431 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:33,432 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:34,119 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:34,119 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:34,635 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:59:34,635 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:59:34,637 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:59:35,144 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:36,121 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:38,123 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:40,125 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:40,578 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:41,238 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:41,238 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:41,238 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:41,240 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:42,217 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:43,218 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:45,220 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:45,727 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:46,649 DEBUG   SenderThread:1154563 [sender.py:send():380] send: stats
+2024-04-22 21:59:47,222 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:49,010 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:49,010 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:49,010 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:49,011 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:49,257 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:50,210 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 21:59:50,210 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 21:59:50,210 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 21:59:50,881 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:51,258 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:53,259 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:55,261 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 21:59:56,153 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 21:59:56,800 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 21:59:56,801 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 21:59:56,801 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 21:59:56,802 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 21:59:57,299 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 21:59:59,301 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:01,294 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:01,302 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:03,304 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:04,590 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 22:00:04,590 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 22:00:04,591 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 22:00:04,592 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:05,373 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:05,373 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:05,793 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 22:00:05,794 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 22:00:05,794 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 22:00:06,301 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:07,375 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:09,377 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:11,378 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:11,735 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:12,382 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 22:00:12,383 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 22:00:12,383 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 22:00:12,384 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:13,450 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:13,450 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:15,452 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:16,649 DEBUG   SenderThread:1154563 [sender.py:send():380] send: stats
+2024-04-22 22:00:16,872 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:17,454 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:19,457 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:20,184 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 22:00:20,185 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 22:00:20,185 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 22:00:20,186 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:20,495 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:21,386 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-22 22:00:21,386 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 22:00:21,386 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: stop_status
+2024-04-22 22:00:21,496 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:21,893 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:23,497 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:25,499 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:27,328 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:27,501 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:27,964 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-22 22:00:27,965 DEBUG   SenderThread:1154563 [sender.py:send():380] send: history
+2024-04-22 22:00:27,965 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: summary_record
+2024-04-22 22:00:27,966 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:28,532 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:29,534 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:31,536 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:32,455 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:33,505 DEBUG   SenderThread:1154563 [sender.py:send():380] send: exit
+2024-04-22 22:00:33,505 INFO    SenderThread:1154563 [sender.py:send_exit():585] handling exit code: 255
+2024-04-22 22:00:33,505 INFO    SenderThread:1154563 [sender.py:send_exit():587] handling runtime: 166
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:send_exit():593] send defer
+2024-04-22 22:00:33,506 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,506 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-22 22:00:33,506 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 1
+2024-04-22 22:00:33,506 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,506 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-22 22:00:33,506 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-04-22 22:00:33,506 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 2
+2024-04-22 22:00:33,507 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,507 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-22 22:00:33,507 INFO    HandlerThread:1154563 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-22 22:00:33,507 DEBUG   SystemMonitor:1154563 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-22 22:00:33,507 DEBUG   SystemMonitor:1154563 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-22 22:00:33,507 INFO    HandlerThread:1154563 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-22 22:00:33,508 INFO    HandlerThread:1154563 [interfaces.py:finish():202] Joined disk monitor
+2024-04-22 22:00:33,537 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:33,538 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:33,545 INFO    HandlerThread:1154563 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-22 22:00:33,545 INFO    HandlerThread:1154563 [interfaces.py:finish():202] Joined memory monitor
+2024-04-22 22:00:33,545 INFO    HandlerThread:1154563 [interfaces.py:finish():202] Joined network monitor
+2024-04-22 22:00:33,545 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,545 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-04-22 22:00:33,545 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 3
+2024-04-22 22:00:33,546 DEBUG   SenderThread:1154563 [sender.py:send():380] send: stats
+2024-04-22 22:00:33,546 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,546 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-22 22:00:33,546 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,546 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-04-22 22:00:33,546 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 4
+2024-04-22 22:00:33,546 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,546 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-22 22:00:33,546 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,546 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-04-22 22:00:33,546 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 5
+2024-04-22 22:00:33,546 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,546 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-22 22:00:33,546 DEBUG   SenderThread:1154563 [sender.py:send():380] send: summary
+2024-04-22 22:00:33,547 INFO    SenderThread:1154563 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-22 22:00:33,547 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,547 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-04-22 22:00:33,547 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 6
+2024-04-22 22:00:33,547 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,547 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-22 22:00:33,548 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,548 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-04-22 22:00:33,548 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 7
+2024-04-22 22:00:33,548 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:33,548 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:33,548 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-22 22:00:33,548 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:33,548 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-04-22 22:00:34,504 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-22 22:00:34,538 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:35,512 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 8
+2024-04-22 22:00:35,512 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: poll_exit
+2024-04-22 22:00:35,512 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:35,512 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-22 22:00:35,512 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:35,512 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-04-22 22:00:35,512 INFO    SenderThread:1154563 [job_builder.py:build():281] Attempting to build job artifact
+2024-04-22 22:00:35,513 INFO    SenderThread:1154563 [job_builder.py:_get_source_type():393] is repo sourced job
+2024-04-22 22:00:35,514 INFO    SenderThread:1154563 [job_builder.py:build():369] adding wandb-job metadata file
+2024-04-22 22:00:35,522 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 9
+2024-04-22 22:00:35,523 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:35,523 DEBUG   SenderThread:1154563 [sender.py:send():380] send: artifact
+2024-04-22 22:00:35,523 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-22 22:00:35,539 INFO    Thread-12 :1154563 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:37,490 INFO    wandb-upload_0:1154563 [upload_job.py:push():89] Uploaded file /home/yuxuan.wu/.local/share/wandb/artifacts/staging/tmp5g6dskcw
+2024-04-22 22:00:37,493 INFO    wandb-upload_1:1154563 [upload_job.py:push():89] Uploaded file /home/yuxuan.wu/.local/share/wandb/artifacts/staging/tmpe9uxg3t2
+2024-04-22 22:00:38,973 INFO    SenderThread:1154563 [sender.py:send_artifact():1456] sent artifact job-git_github.com_Irislucent_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6ODA1OTI5MDE2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NTQ2ODU2Nw==', 'latestArtifact': None}}
+2024-04-22 22:00:38,973 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:38,973 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-04-22 22:00:38,973 INFO    SenderThread:1154563 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-22 22:00:38,974 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: status_report
+2024-04-22 22:00:39,506 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-22 22:00:39,540 INFO    SenderThread:1154563 [dir_watcher.py:finish():388] scan: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files
+2024-04-22 22:00:39,540 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-metadata.json wandb-metadata.json
+2024-04-22 22:00:39,540 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json wandb-summary.json
+2024-04-22 22:00:39,541 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log output.log
+2024-04-22 22:00:39,541 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/config.yaml config.yaml
+2024-04-22 22:00:39,542 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/requirements.txt requirements.txt
+2024-04-22 22:00:39,543 INFO    SenderThread:1154563 [dir_watcher.py:finish():402] scan save: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/conda-environment.yaml conda-environment.yaml
+2024-04-22 22:00:39,543 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 10
+2024-04-22 22:00:39,543 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:39,543 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-22 22:00:39,546 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:39,546 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-04-22 22:00:39,546 INFO    SenderThread:1154563 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-22 22:00:40,271 INFO    wandb-upload_1:1154563 [upload_job.py:push():131] Uploaded file /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/output.log
+2024-04-22 22:00:40,285 INFO    wandb-upload_0:1154563 [upload_job.py:push():131] Uploaded file /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/wandb-summary.json
+2024-04-22 22:00:40,405 INFO    wandb-upload_2:1154563 [upload_job.py:push():131] Uploaded file /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/config.yaml
+2024-04-22 22:00:40,413 INFO    wandb-upload_3:1154563 [upload_job.py:push():131] Uploaded file /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/requirements.txt
+2024-04-22 22:00:40,425 INFO    wandb-upload_4:1154563 [upload_job.py:push():131] Uploaded file /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/files/conda-environment.yaml
+2024-04-22 22:00:40,625 INFO    Thread-11 (_thread_body):1154563 [sender.py:transition_state():613] send defer: 11
+2024-04-22 22:00:40,626 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:40,626 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-22 22:00:40,626 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:40,626 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-04-22 22:00:40,626 INFO    SenderThread:1154563 [file_pusher.py:join():181] waiting for file pusher
+2024-04-22 22:00:40,626 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 12
+2024-04-22 22:00:40,626 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:40,626 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-22 22:00:40,627 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:40,627 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-04-22 22:00:40,627 INFO    SenderThread:1154563 [file_stream.py:finish():595] file stream finish called
+2024-04-22 22:00:41,365 INFO    SenderThread:1154563 [file_stream.py:finish():599] file stream finish is done
+2024-04-22 22:00:41,366 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 13
+2024-04-22 22:00:41,366 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:41,366 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-22 22:00:41,366 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:41,366 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-04-22 22:00:41,366 INFO    SenderThread:1154563 [sender.py:transition_state():613] send defer: 14
+2024-04-22 22:00:41,366 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: defer
+2024-04-22 22:00:41,366 DEBUG   SenderThread:1154563 [sender.py:send():380] send: final
+2024-04-22 22:00:41,366 INFO    HandlerThread:1154563 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-22 22:00:41,366 DEBUG   SenderThread:1154563 [sender.py:send():380] send: footer
+2024-04-22 22:00:41,366 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: defer
+2024-04-22 22:00:41,366 INFO    SenderThread:1154563 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-04-22 22:00:41,367 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-22 22:00:41,367 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: poll_exit
+2024-04-22 22:00:41,367 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: server_info
+2024-04-22 22:00:41,367 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-22 22:00:41,367 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: server_info
+2024-04-22 22:00:41,368 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-22 22:00:41,369 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-22 22:00:41,369 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: job_info
+2024-04-22 22:00:41,589 DEBUG   SenderThread:1154563 [sender.py:send_request():407] send_request: job_info
+2024-04-22 22:00:41,589 INFO    MainThread:1154563 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-04-22 22:00:41,590 INFO    MainThread:1154563 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-04-22 22:00:41,590 INFO    MainThread:1154563 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2024-04-22 22:00:41,590 DEBUG   HandlerThread:1154563 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-22 22:00:41,590 INFO    HandlerThread:1154563 [handler.py:finish():866] shutting down handler
+2024-04-22 22:00:42,370 INFO    WriterThread:1154563 [datastore.py:close():294] close: /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240422_215744-s7mol9uq/run-s7mol9uq.wandb
+2024-04-22 22:00:42,590 INFO    SenderThread:1154563 [sender.py:finish():1534] shutting down sender
+2024-04-22 22:00:42,590 INFO    SenderThread:1154563 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-22 22:00:42,590 INFO    SenderThread:1154563 [file_pusher.py:join():181] waiting for file pusher

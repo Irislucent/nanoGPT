@@ -1,0 +1,27 @@
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Configure stats pid to 1272052
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Loading settings from /home/yuxuan.wu/.config/wandb/settings
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Loading settings from /home/yuxuan.wu/hotdog/nanoGPT/wandb/settings
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/home/yuxuan.wu/hotdog/nanoGPT/train.py', 'program': '/home/yuxuan.wu/hotdog/nanoGPT/train.py'}
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:_log_setup():528] Logging user logs to /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240423_003026-e4fvtzo8/logs/debug.log
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:_log_setup():529] Logging internal logs to /home/yuxuan.wu/hotdog/nanoGPT/wandb/run-20240423_003026-e4fvtzo8/logs/debug-internal.log
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:init():568] calling init triggers
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'out_dir': 'mini-gpt-2', 'eval_interval': 250, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'hotdog-newspaper-char', 'wandb_run_name': 'mini-gpt-2', 'dataset': 'tokenize_char', 'gradient_accumulation_steps': 1, 'batch_size': 64, 'block_size': 256, 'n_layer': 6, 'n_head': 8, 'n_embd': 384, 'dropout': 0.2, 'bias': False, 'learning_rate': 0.001, 'max_iters': 100000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 5000, 'min_lr': 0.0001, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'bfloat16', 'compile': True}
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:init():618] starting backend
+2024-04-23 00:30:26,370 INFO    MainThread:1272052 [wandb_init.py:init():622] setting up manager
+2024-04-23 00:30:26,371 INFO    MainThread:1272052 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-23 00:30:26,372 INFO    MainThread:1272052 [wandb_init.py:init():628] backend started and connected
+2024-04-23 00:30:26,373 INFO    MainThread:1272052 [wandb_init.py:init():720] updated telemetry
+2024-04-23 00:30:26,380 INFO    MainThread:1272052 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-04-23 00:30:26,945 INFO    MainThread:1272052 [wandb_run.py:_on_init():2220] communicating current version
+2024-04-23 00:30:27,015 INFO    MainThread:1272052 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-23 00:30:27,015 INFO    MainThread:1272052 [wandb_init.py:init():804] starting run threads in backend
+2024-04-23 00:30:29,409 INFO    MainThread:1272052 [wandb_run.py:_console_start():2199] atexit reg
+2024-04-23 00:30:29,409 INFO    MainThread:1272052 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-04-23 00:30:29,409 INFO    MainThread:1272052 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-04-23 00:30:29,409 INFO    MainThread:1272052 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-04-23 00:30:29,410 INFO    MainThread:1272052 [wandb_init.py:init():845] run started, returning control to user process
